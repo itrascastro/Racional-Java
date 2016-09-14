@@ -121,5 +121,13 @@ public final class Racional {
         return result;
     }
     
+    public void escalar(int n) throws Exception {
+        this.setNumerador(this.numerador * n);
+        try {
+            this.setDenominador(this.denominador * n);
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
 }
 
