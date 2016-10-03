@@ -25,6 +25,10 @@ public class Test {
             
             System.out.println(res);
             
+            r2 = r1;
+            r1 = null;
+            System.out.println(r1);
+            
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
